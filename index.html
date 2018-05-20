@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Построй свой маршрут</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="" />
+	<link rel="icon" href="favicon.png"/>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<form class="ba-input-route" method="post">
+		<LABEL>Начало маршрута: </LABEL>
+		<input type="text" name="start" id="start" placeholder="Проложить маршрут отсюда" required></input>
+		<LABEL>Конец маршрута: </LABEL>
+		<input type="text" name="end" id="end" placeholder="Проложить маршрут сюда" required></input>
+		<button class="ba-button" type="button">Проложить маршрут</button>
+	</form>
+	<div id="map"></div>
+	<script async defer	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRTcYGEiMeWPiTqsdpohFbC29MOt5Wi8w&callback=initMap"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

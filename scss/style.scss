@@ -1,0 +1,120 @@
+@import "normalize";
+@import "layout";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic');
+
+body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font: 400 16px/1.2 Roboto, sans-serif;
+	color: #fff;
+
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	background-color: transparent;
+	padding: 10px;
+	border: 2px solid #d59563;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+	border-color: #6b9a76;
+	color: #6b9a76;
+	outline: none;
+
+}
+button:focus {
+	border: 2px solid #6b9a76;
+		outline: none;
+
+	}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid #d59563;
+	margin-bottom: 15px;
+	min-width: 250px;
+	color: #6b9a76;
+	font-size: 16px;
+	font-style: italic;
+	outline: none;
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+::placeholder{
+	color: #6b9a76;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+	border-bottom: 2px solid #6b9a76;
+	outline: none;
+
+}
+textarea {
+
+}
+#map {
+	height: 100%;
+}
+.ba-input-route {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	max-width: 350px;
+	top: 33%;
+	z-index: 1;
+	background-color: rgba(111, 85, 64, 0.85);
+	padding: 25px;
+	border: 1px solid #d59563;
+	border-radius: 5px;
+	box-shadow: 0 0 8px rgb(213, 149, 99);
+	margin-left: 25px;
+	label{
+		font-weight: 700;
+		margin-bottom: 5px;
+	}
+}
