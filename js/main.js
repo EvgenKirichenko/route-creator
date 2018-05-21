@@ -91,7 +91,7 @@ function initMap() {
 	var onChangeHandler = function() {
 		calculateAndDisplayRoute(directionsService, directionsDisplay);
 	};
-	document.querySelector('.ba-button').addEventListener('click', onChangeHandler);
+	document.querySelector('.ba-input-route').addEventListener('click', onChangeHandler);
 }
 
 function calculateAndDisplayRoute(directionsService, directionsDisplay) {
